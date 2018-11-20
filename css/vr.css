@@ -1,15 +1,15 @@
 #body {
 	background-color: rgb(255, 255, 255);
-	font-family: Calibri;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	text-align: center;
 }
 .header {
 	position: relative;
-	color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	font-size: 2vw;
     font-weight: bolder;
     margin-bottom: 0px;
-    font-size:0px;
 }
 .titel {
 	position: absolute;
@@ -37,10 +37,13 @@
 .navi {
     background-color: #001fa8;
     position: relative;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1.5vw;
     text-align: center;
 }
 .navi ul {
+    display: flex;
+    flex-direction: column;
     list-style-type: none;
     list-style: none;
     overflow: hidden;
@@ -65,8 +68,40 @@
 	background-color: #ffffff;	
 	color: #001fa8;
 }
-#inh {
-	/*
+@media (min-width: 45em) {
+    .navi ul {	
+      flex-direction: row;  
+    }
+    . navi li {
+      font-size: 1em;
+    }  
+    .navi a {
+        display: block;
+        padding: .4em;
+        text-decoration: none; 
+        font-weight: bold;
+        border: 1px solid rgb(50, 50, 50);
+        border-radius: 10px;
+        box-shadow: 0 5px 10px white inset;
+        color: rgb(255, 255, 255); 
+        background-color: rgb(238, 130, 97); 
+        transition: all .25s ease-in;	  
+      }
+
+     .navi li[aria-current] a {
+        background-color: firebrick; 
+        color: gold;
+      }
+      .navi a:focus,
+      .navi a:hover,
+      .navi li[aria-current] a:focus,
+      .navi li[aria-current] a:hover {    
+        color: darkblue; 
+        background-color: gold;
+      }
+
+/* #inh {
+    
     background-color: rgb(255, 255, 255);
     position: static;
     width: 1000px;
@@ -80,12 +115,13 @@
     display: block;
     margin: auto;
     text-align: justify;
-	*/
-}
+	
+} */
 
 #footer {
 	background-color: #2b57e7;
-	text-transform: none;
+    text-transform: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	font-weight: normal;
 	font-size: 1vw;
     color: white;

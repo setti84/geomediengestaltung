@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://aframe.io/releases/0.8.0/aframe.js"></script>
+    </head>
+
+<body>
+    <a-scene>
+
+        <a-assets>
+            <!-- Skybox from Alexanderplatz-->
+            <img id="ground" src="ground.jpg">
+            <img id="sky" src="bluesky.jpeg">
+
+            <!-- Tree Object-->
+            <a-asset-item id="crate_tree-obj" src="Tree/tree.obj"></a-asset-item>
+            <a-asset-item id="crate_tree-mtl" src="Tree/tree.mtl"></a-asset-item>
+
+            <!-- Berliner Fernsehturm Object-->
+            <a-asset-item id="crate_tower-obj" src="Fernsehturm/tower_v3.obj"></a-asset-item>
+            <a-asset-item id="crate_tower-mtl" src="Fernsehturm/tower_v3.mtl"></a-asset-item>
+
+            <!-- Weltuhr Object-->
+            <a-asset-item id="crate_uhr-obj" src="Weltuhr/weltuhr.obj"></a-asset-item>
+            <a-asset-item id="crate_uhr-mtl" src="Weltuhr/weltuhr.mtl"></a-asset-item>
+
+        </a-assets>
+
+        <!-- Ground-->
+        <a-plane src="#ground" position="0 0 0" rotation="-90 0 0" width="4" height="4" shadow></a-plane>
+        <a-plane src="#ground" position="4 0 4" rotation="-90 0 0" width="4" height="4" shadow></a-plane>
+        <a-plane src="#ground" position="-4 0 -4" rotation="-90 0 0" width="4" height="4" shadow></a-plane>
+        <a-plane src="#ground" position="4 0 0" rotation="-90 0 0" width="4" height="4" shadow></a-plane>
+        <a-plane src="#ground" position="-4 0 0" rotation="-90 0 0" width="4" height="4" shadow></a-plane>
+        <a-plane src="#ground" position="0 0 4" rotation="-90 0 0" width="4" height="4" shadow></a-plane>
+        <a-plane src="#ground" position="0 0 -4" rotation="-90 0 0" width="4" height="4" shadow></a-plane>
+        <a-plane src="#ground" position="4 0 -4" rotation="-90 0 0" width="4" height="4" shadow></a-plane>
+        <a-plane src="#ground" position="-4 0 4" rotation="-90 0 0" width="4" height="4" shadow></a-plane>
+        
+
+        <!-- Skybox-->
+        <a-sky src="#sky" rotation="0 -90 0"></a-sky>
+
+
+        <!-- Loading the Objects into the scene.-->
+        <a-obj-model src="#crate_tree-obj" mtl="#crate_tree-mtl" position="4 0 4"></a-obj-model>
+        <a-obj-model src="#crate_tree-obj" mtl="#crate_tree-mtl" position="3 0 3" scale="1.5 2.5 1.5"></a-obj-model>
+        <a-obj-model src="#crate_tower-obj" mtl="#crate_tower-mtl" position="0 0 40"scale="23 23 23"></a-obj-model>
+        <a-obj-model src="#crate_uhr-obj" mtl="#crate_uhr-mtl" position="-4 0 -4"scale="0.75 0.75 0.75"></a-obj-model>
+    
+    </a-scene>
+
+</body>
+</html>

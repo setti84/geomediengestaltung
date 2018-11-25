@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://aframe.io/releases/0.8.0/aframe.js"></script>
+    </head>
+
+<body>
+    <a-scene>
+
+        <a-assets>
+            <!-- Skybox from Alexanderplatz-->
+            <img id="sky" src="skybox.jpg">
+
+            <!-- Tree Object-->
+            <a-asset-item id="crate_tree-obj" src="Tree/tree.obj"></a-asset-item>
+            <a-asset-item id="crate_tree-mtl" src="Tree/tree.mtl"></a-asset-item>
+
+            <!-- Berliner Fernsehturm Object-->
+            <a-asset-item id="crate_tower-obj" src="Fernsehturm/tower_v3.obj"></a-asset-item>
+            <a-asset-item id="crate_tower-mtl" src="Fernsehturm/tower_v3.mtl"></a-asset-item>
+
+            <!-- Weltuhr Object-->
+            <a-asset-item id="crate_uhr-obj" src="Weltuhr/weltuhr.obj"></a-asset-item>
+            <a-asset-item id="crate_uhr-mtl" src="Weltuhr/weltuhr.mtl"></a-asset-item>
+
+        </a-assets>
+
+        <a-sky src="#sky" rotation="0 -90 0"></a-sky>
+
+         <!-- Loading the Objects into the scene.-->
+        <a-obj-model src="#crate_tree-obj" mtl="#crate_tree-mtl" position="0 -10 -25"></a-obj-model>
+        <a-obj-model src="#crate_tree-obj" mtl="#crate_tree-mtl" position="80 -40 -25" scale="2.5 3.5 2.5"></a-obj-model>
+        <a-obj-model src="#crate_tower-obj" mtl="#crate_tower-mtl" position="-390 -50 250"scale="23 23 23"></a-obj-model>
+        <a-obj-model src="#crate_uhr-obj" mtl="#crate_uhr-mtl" position="160 -150 -30"scale="4 4 4"></a-obj-model>
+    </a-scene>
+
+</body>
+</html>

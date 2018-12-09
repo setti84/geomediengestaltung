@@ -6,7 +6,6 @@
 				Geodaten in VR
 			</title>
      
-			
 			<!-- Karten Header -->
 			<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
 			integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -16,61 +15,41 @@
 			crossorigin="">
             </script>
             
-            <link rel="stylesheet" type="text/css" href="css/vr.css">
-			
-			
+            <link rel="stylesheet" media="screen and (min-width: 800px)" href="css/vr-min.css">
+            <link rel="stylesheet" media="screen and (max-width: 799px)" href="css/vr-max.css">			
 	</head>
     
 	<body id= body>
         <div class="header">
-            <img src="image/hk.jpg" width="100%" height="10%" alt= "heute, kein Foto" > 
+            <img src="image/hk.jpg" width="100%" height="auto" alt= "heute, kein Foto" > 
             <div class="titel">
                 Darstellung räumlicher Geodaten
                 <br>
                 mittels virtueller Realität
             </div> 
         </div>
-
-        <div class="navi">  					
+        
+    <!--    <input type="checkbox"/>
+                <span></span>
+                <span></span>
+                <span></span>
+    -->
+        
+        <nav>    
+        <button id="button">Menü</button>
+        <div id="dropdown">  
             <ul>
                 <li><a href="index.html">Homepage</a></li>
-		        <li><a href="s1.html">Standort1</a></li>
-			    <li><a href="s2.html">Standort2</a></li>		
+		        <li><a href="s1.html">Standort 1</a></li>
+			    <li><a href="s2.html">Standort 2</a></li>		
 			    <li><a href="Impressum.html">Impresssum</a></li>    			
 		    </ul>
         </div>          
-        <hr  id="line">
-        <div id=inh align="center">
-			<div id=text >
-		
-            <p>
+        </nav>
 
-                Niemand ist cooler als ein Panda. Diese Wesen sind so niedliche, dass sie nur dadurch den Weltfrieden wahren können?! Oder nicht XD
-                Niemand ist cooler als ein Panda. Diese Wesen sind so niedliche, dass sie nur dadurch den Weltfrieden wahren können?! Oder nicht XD
-                Niemand ist cooler als ein Panda. Diese Wesen sind so niedliche, dass sie nur dadurch den Weltfrieden wahren können?! Oder nicht XD
-                Niemand ist cooler als ein Panda. Diese Wesen sind so niedliche, dass sie nur dadurch den Weltfrieden wahren können?! Oder nicht XD
-                Niemand ist cooler als ein Panda. Diese Wesen sind so niedliche, dass sie nur dadurch den Weltfrieden wahren können?! Oder nicht XD
-                Niemand ist cooler als ein Panda. Diese Wesen sind so niedliche, dass sie nur dadurch den Weltfrieden wahren können?! Oder nicht XD
-                Niemand ist cooler als ein Panda. Diese Wesen sind so niedliche, dass sie nur dadurch den Weltfrieden wahren können?! Oder nicht XD
-                Niemand ist cooler als ein Panda. Diese Wesen sind so niedliche, dass sie nur dadurch den Weltfrieden wahren können?! Oder nicht XD
-                Niemand ist cooler als ein Panda. Diese Wesen sind so niedliche, dass sie nur dadurch den Weltfrieden wahren können?! Oder nicht XD
-                Niemand ist cooler als ein Panda. Diese Wesen sind so niedliche, dass sie nur dadurch den Weltfrieden wahren können?! Oder nicht XD
-                Niemand ist cooler als ein Panda. Diese Wesen sind so niedliche, dass sie nur dadurch den Weltfrieden wahren können?! Oder nicht XD
-                Niemand ist cooler als ein Panda. Diese Wesen sind so niedliche, dass sie nur dadurch den Weltfrieden wahren können?! Oder nicht XD
-                Niemand ist cooler als ein Panda. Diese Wesen sind so niedliche, dass sie nur dadurch den Weltfrieden wahren können?! Oder nicht XD
-                Niemand ist cooler als ein Panda. Diese Wesen sind so niedliche, dass sie nur dadurch den Weltfrieden wahren können?! Oder nicht XD
-                Niemand ist cooler als ein Panda. Diese Wesen sind so niedliche, dass sie nur dadurch den Weltfrieden wahren können?! Oder nicht XD
-                Niemand ist cooler als ein Panda. Diese Wesen sind so niedliche, dass sie nur dadurch den Weltfrieden wahren können?! Oder nicht XD
-                Niemand ist cooler als ein Panda. Diese Wesen sind so niedliche, dass sie nur dadurch den Weltfrieden wahren können?! Oder nicht XD
-                Niemand ist cooler als ein Panda. Diese Wesen sind so niedliche, dass sie nur dadurch den Weltfrieden wahren können?! Oder nicht XD
-                Niemand ist cooler als ein Panda. Diese Wesen sind so niedliche, dass sie nur dadurch den Weltfrieden wahren können?! Oder nicht XD
-                Niemand ist cooler als ein Panda. Diese Wesen sind so niedliche, dass sie nur dadurch den Weltfrieden wahren können?! Oder nicht XD
-                Niemand ist cooler als ein Panda. Diese Wesen sind so niedliche, dass sie nur dadurch den Weltfrieden wahren können?! Oder nicht XD
-                Niemand ist cooler als ein Panda. Diese Wesen sind so niedliche, dass sie nur dadurch den Weltfrieden wahren können?! Oder nicht XD
-                Niemand ist cooler als ein Panda. Diese Wesen sind so niedliche, dass sie nur dadurch den Weltfrieden wahren können?! Oder nicht XD
-                Niemand ist cooler als ein Panda. Diese Wesen sind so niedliche, dass sie nur dadurch den Weltfrieden wahren können?! Oder nicht XD
-                Niemand ist cooler als ein Panda. Diese Wesen sind so niedliche, dass sie nur dadurch den Weltfrieden wahren können?! Oder nicht XD
-                Niemand ist cooler als ein Panda. Diese Wesen sind so niedliche, dass sie nur dadurch den Weltfrieden wahren können?! Oder nicht XD
+        <div align="center">
+			<div id=content>
+            <p>
                 Niemand ist cooler als ein Panda. Diese Wesen sind so niedliche, dass sie nur dadurch den Weltfrieden wahren können?! Oder nicht XD
                 Niemand ist cooler als ein Panda. Diese Wesen sind so niedliche, dass sie nur dadurch den Weltfrieden wahren können?! Oder nicht XD
                 Niemand ist cooler als ein Panda. Diese Wesen sind so niedliche, dass sie nur dadurch den Weltfrieden wahren können?! Oder nicht XD
@@ -86,17 +65,13 @@
 			</div>	
         </div>
    
-    
-       
-	
-        <hr>
-
-        <div id="footer">  					
+        
+        <div class="footer">				
             <ul>
                 <li><a href="terms.html">Terms</a></li>
                 <li><a href="privacypolicy.html">Privacy Policy</a></li>
                 <li><a href="Impressum.html">Impressum</a></li>	
-                <li style="float:right"><a class="active">Copyright &copy; 2018 Die Kakerlaken alias Schabentier, Inc All right reserved.</a></li>
+                <li><b>Copyright &copy; 2018 Die Kakerlaken alias Schabentier, Inc All right reserved.</b></li>
             </ul>   
         </div>
     </body>

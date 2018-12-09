@@ -1,0 +1,114 @@
+/*            <link rel="stylesheet" media="screen and (min-width: 800px)" href="css/vr-min.css"> */
+
+#body {
+	background-color: rgb(255, 255, 255);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+.header {
+	position: relative;
+    color: rgb(255, 255, 255);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    display: grid;
+}
+.titel {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#map {
+	position: center;
+	height: 500px;
+	width: 70%;
+	margin-top: 50px;
+	margin-bottom: 25px;
+	box-shadow: 0 4px 8px 0 rgb(9,9,9), 0 6px 20px 0 rgb(9,9,9);
+	border-radius: 5px;
+	box-shadow: 0 4px 8px 0 rgb(9,9,9), 0 6px 20px 0 rgb(9,9,9);
+	border-radius: 5px
+	
+}
+input{
+    display: none;
+}
+/*Bildschirmansicht*/
+#button{
+    visibility: hidden;
+    position: absolute;
+}
+nav {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-weight: bolder;
+    width: 100%;
+    padding: 10px 0px;
+    background: #0c007a;
+    color: rgb(255, 255, 255);
+}
+nav ul {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+nav li {
+    display: inline;
+    list-style: none;
+    overflow: hidden;
+}
+nav a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 -1px rgb(0, 0, 0), 1px 0 #111, 0 1px #111, -1px 0 #111;
+    padding: 10px 35px;  
+}
+nav a:focus,
+nav a:hover{
+    color: #0c007a;
+    background-color: #ffffff;
+}
+#content {
+    padding: 10%;
+    z-index: 1;
+    text-align: center;
+}
+.footer {
+	background-color:#0c007a;
+    text-transform: none;
+	font-weight: normal;
+	font-size: 12px;
+    text-shadow: 0 -1px rgb(0, 0, 0), 1px 0 #111, 0 1px #111, -1px 0 #111;
+    padding: 0px 10px;
+    display: block;
+}
+.footer ul{
+	list-style-type: none;
+    overflow: hidden;
+    padding-left: 0%;
+}
+.footer a{
+	text-decoration: none;
+	display: block;
+	color: rgb(255, 255, 255);
+    padding: 10px 10px;
+	float: left;
+}
+.footer b{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-weight: normal;
+    text-decoration: none;
+	display: block;
+	color: rgb(255, 255, 255);
+    padding: 10px 0px;
+    float: right;
+}
+.footer a:hover,
+.footer a:focus{
+    color: #0c007a;	
+    background: #ffffff;
+}
+
+
+

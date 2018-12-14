@@ -1,51 +1,64 @@
 <!DOCTYPE html>
 <html lang="de">
 	<head>
-        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
 			<title>
 				Geodaten in VR
             </title>
             
-            <link rel="stylesheet" media="screen and (min-width: 800px)" href="css/vr-min.css">
-            <link rel="stylesheet" media="screen and (max-width: 799px)" href="css/vr-max.css">
-	</head>
+            <link rel="stylesheet" type="text/css" href="css/vr.css">			
      
-    <body id= body>
+			<!-- Karten Header -->
+			<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+			integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+			crossorigin=""/>
+			<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+			integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+			crossorigin="">
+            </script>
+    </head>
+    
+	<body id= body>
         <div class="header">
-            <img src="image/hk.jpg" width="100%" height="auto" alt= "heute, kein Foto" > 
+            <img src="image/berlin2dcut.png" width="100%" height="100%" alt= "heute, kein Foto" > 
             <div class="titel">
-                Darstellung räumlicher Geodaten
+                Sebi ist doof 
                 <br>
-                mittels virtueller Realität
+                ...
             </div> 
         </div>
-        
-        <input type="checkbox"/>
-                <span></span>
-                <span></span>
-                <span></span>
 
-        <nav>    
-        <div class="navi">  
-            <ul>
-                <li><a href="index.html">Homepage</a></li>
-		        <li><a href="s1.html">Standort 1</a></li>
-			    <li><a href="s2.html">Standort 2</a></li>		
-			    <li><a href="Impressum.html">Impresssum</a></li>    			
-		    </ul>
-        </div>          
-        </nav>            
-        <div>
-            <p>
+        <div class="navi">    
+        <button id="button" class="button">Menü</button>
+            <div id="dropdown" class="dropdown-class">  
+                <ul>
+                    <li><a href="index.html">Homepage</a></li>
+                    <li><a href="s1.html">Methode 1</a></li>
+                    <li><a href="s2.html">Methode 2</a></li>		
+                    <li><a href="Impressum.html">Impresssum</a></li>    			
+                </ul>
+            </div>          
+        </div>
 
-
-            </p>
+        <div align="center">
+			
 		</div>
-
-</body>
-
-
-
-
-
+			
+			 
+   
+        
+        <div class="footer">				
+            <ul>
+                <li><a href="terms.html">Terms</a></li>
+                <li><a href="privacypolicy.html">Privacy Policy</a></li>
+                <li><a href="Impressum.html">Impressum</a></li>	
+                <li><b>Copyright &copy; 2018 Die Kakerlaken alias Schabentier, Inc All right reserved.</b></li>
+            </ul>   
+        </div>
+    </body>
+	<!-- Karten Script Einbinden -->
+			<script src="js/js_main.js"> </script>
+			
+	
 </html>
+			

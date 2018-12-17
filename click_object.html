@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://aframe.io/releases/0.8.0/aframe.js"></script>
+    </head>
+    
+    <body>
+        <a-scene>
+            <a-assets>
+                <img id="texture" src="texture.jpg">
+
+                           <!-- Tree Object-->
+            <a-asset-item id="crate_tree-obj" src="tree/tree.obj"></a-asset-item>
+            <a-asset-item id="crate_tree-mtl" src="tree/tree.mtl"></a-asset-item>
+            
+            <a-asset-item id="crate_uhr-obj" src="weltuhr/weltuhr.obj"></a-asset-item>
+            <a-asset-item id="crate_uhr-mtl" src="weltuhr/weltuhr.mtl"></a-asset-item>
+
+            </a-assets>
+
+            <a-obj-model src="#crate_tree-obj" mtl="#crate_tree-mtl" position="4 4 4">
+                  <a-animation attribute="rotation" begin="click" repeat="indefinite" to="0 360 0"></a-animation>
+                  <a-event name="newObject" src="#create_uhr-obj" position="6 6 6"></a-event>
+            </a-obj-model>
+            </a-assets>   
+  
+            
+            <a-camera position="0 7 5">
+                <a-cursor color="#FF0000">
+            </a-camera>
+        </a-scene>
+        
+        <!-- interact using vanilla JavaScript when cursor is over the object -->
+        <!-- instead of using <a-event name="mouseenter" scale="4 1 6"></a-event> -->
+        <script>
+            /*var box = document.querySelector( 'a-box' );
+            box.addEventListener( 'mouseenter', function ( )
+            {
+                box.setAttribute( 'scale',
+                {
+                    x: 4,
+                    y: 1,
+                    z: 6
+                } );
+            } );*/
+        </script>
+    </body>
+</html>

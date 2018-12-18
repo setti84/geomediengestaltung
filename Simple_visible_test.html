@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://aframe.io/releases/0.8.0/aframe.js"></script>
+    </head>
+
+<body>
+    <a-scene>
+
+        <a-assets>
+                        <!-- Man Object-->
+           <a-asset-item id="crate_man-obj" src="men/simple_men.obj"></a-asset-item>
+           <a-asset-item id="crate_man-mtl" src="men/simple_men.mtl"></a-asset-item>
+          
+           <a-asset-item id="crate_tree-obj" src="men/tree.obj"></a-asset-item>
+           <a-asset-item id="crate_tree-mtl" src="men/tree.mtl"></a-asset-item>
+            
+
+        </a-assets>
+
+        <a-camera position="0 2 0">
+                <a-cursor color="#FF0000">
+        </a-camera>
+
+        <!-- Loading the Objects into the scene.-->
+
+        <a-obj-model src="#crate_tree-obj" mtl="#crate_tree-mtl" position="0 0 -2">
+        <a-entity visible="flase">
+            <a-obj-model src="#crate_man-obj" mtl="#crate_man-mtl" position="0 0 0" scale="1 1 1"></a-obj-model>  
+        </a-entity>
+        
+        <!--    <a-entity visible="false">
+                <a-obj-model src="#crate_man-obj" mtl="#crate_man-mtl" position="0 0 0" scale="1 1 1"></a-obj-model>
+                <a-animation attribute="visible" begin="1000" to="true"></a-animation>
+            </a-entity>
+        </a-obj-model> -->
+       
+     
+    </a-scene>
+
+</body>
+</html>

@@ -1,5 +1,15 @@
 
+
+// +++++++++++Events+++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+document.getElementById("button").addEventListener('click', (e) => {
+	document.getElementById("dropdown").classList.toggle("show");
+},false);
+
+// ++++++++++++Map+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
 /* Hintergdundkarten definieren je als Variable */
+if(document.getElementById("map")){
 
 var grayscale = L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {	
 			attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
@@ -59,12 +69,8 @@ var Points = L.layerGroup();
 		console.log(e.latlng.lat)
 		window.open("https://www.sebastiansettgast.com/#" + e.latlng.lat +"/" + e.latlng.lng , "_blank");
 	}
-
-// Get the button, and when the user clicks on it, execute myFunction
-document.getElementById("button").onclick = function() {myFunction()
-};
-
-/* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
-function myFunction() {
-	document.getElementById("dropdown").classList.toggle("show");
 }
+
+
+
+

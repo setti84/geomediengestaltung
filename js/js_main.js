@@ -61,7 +61,7 @@ var Points = L.layerGroup();
 	
 	/*zusammenbau des Burger Menüs für die Layer, er erkennt automatische alle nicht angegeben layer*/
 	L.control.layers(baseLayers, overlays).addTo(mymap);
-	
+	 mymap.on('click',onMapClick);
 	function onMapClick(e) {
 		var popup = L.popup();
 		popup.setLatLng(e.latlng).setContent("You clicked the map at " + e.latlng.toString()).openOn(mymap);

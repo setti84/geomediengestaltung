@@ -24,6 +24,10 @@ img {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
+    padding: 0.1em;
+    background: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 orange, 0 6px 20px 0 orange;
 }
 #map {
     margin-left: auto;
@@ -39,7 +43,7 @@ img {
     z-index: 1;
 }
 .footer {
-    background-color:orange;
+    background-color: rgb(38, 38, 150);
     text-transform: none;
     font-weight: normal;
     font-size: 1em;
@@ -50,14 +54,14 @@ img {
 }
 .footer a:hover,
 .footer a:focus{
-    color: orange;	
+    color:  rgb(38, 38, 150);	
     background: #ffffff;
 }
 /* mobil Ansicht*/
 @media screen and (max-width: 799px){
     .button {
         color: #ffffff;
-        background-color: orange;
+        background-color:  rgb(38, 38, 150);
         padding: 8px;
         border: none;
         cursor: pointer;
@@ -66,7 +70,7 @@ img {
         z-index: 1;
     }
     .button:hover, .button:focus {
-        color: orange;
+        color:  rgb(38, 38, 150);
         background-color: #ffffff;
     }
     .navi{
@@ -101,11 +105,11 @@ img {
         font-weight: normal;
         padding: 10px 20px;
         color: #ffffff;
-        background: orange;
+        background:  rgb(38, 38, 150);
         width: 100%;
     }
     .dropdown-class a:focus, .dd a:hover {
-        color: orange;
+        color:  rgb(38, 38, 150);
         background-color: #ffffff;
     }
     .show {
@@ -157,7 +161,7 @@ img {
         font-weight: bolder;
         width: 100%;
         padding: 10px 0px;
-        background: orange;
+        background:  rgb(38, 38, 150);
         color: rgb(255, 255, 255);
         z-index: 1;
     }
@@ -179,7 +183,7 @@ img {
     }
     .navi a:focus,
     .navi a:hover{
-        color: orange;
+        color:  rgb(38, 38, 150);
         background-color: #ffffff;
     }
     h1 {

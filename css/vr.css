@@ -2,7 +2,6 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     position: relative;
     text-align: center;
-    z-index: -1;
 }
 .header {
     position: relative;
@@ -10,9 +9,6 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 5vw;
     font-weight: bolder;
-    /*
-    text-shadow:0 -3px rgb(0, 0, 0), 3px 0 #111, 0 3px #111, -3px 0 #111;
-    */
     text-shadow: 4px 4px 4px  #000000;
     z-index: -1;
     margin-bottom: -20px;
@@ -28,11 +24,6 @@ img {
     transform: translate(-50%, -50%);
     z-index: 1;
     padding: 0.1em;
-    /*
-    background: #ffffff;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px 0 orange, 0 6px 20px 0 orange;
-    */
 }
 #map {
     margin-left: auto;
@@ -61,7 +52,7 @@ img {
     color:  rgb(38, 38, 150);	
     background: #ffffff;
 }
-/* mobil Ansicht*/
+/* mobile view*/
 @media screen and (max-width: 799px){
     .button {
         color: #ffffff;

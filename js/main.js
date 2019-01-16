@@ -30,12 +30,12 @@ if(document.getElementById("map")){
 		});
 
 	const alexIcon = L.icon({
-		iconUrl: 'image/Test.PNG',
+		iconUrl: 'image/test.PNG',
 		iconSize:     [50, 30],
 		});
 
 	const pldRepIcon = L.icon({
-		iconUrl: 'image/Test.PNG',
+		iconUrl: 'image/test.PNG',
 		iconSize:     [50, 30],
 		});
 
@@ -63,7 +63,6 @@ if(document.getElementById("map")){
 	const layerControl = L.control.layers(baseLayers, overlays).addTo(map);
 
 	map.on('click', onMapClick );
-
 
 }
 

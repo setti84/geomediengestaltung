@@ -10,7 +10,10 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 5vw;
     font-weight: bolder;
-    text-shadow:0 -1px rgb(0, 0, 0), 1px 0 #111, 0 1px #111, -1px 0 #111;
+    /*
+    text-shadow:0 -3px rgb(0, 0, 0), 3px 0 #111, 0 3px #111, -3px 0 #111;
+    */
+    text-shadow: 4px 4px 4px  #000000;
     z-index: -1;
     margin-bottom: -20px;
 }
@@ -25,9 +28,11 @@ img {
     transform: translate(-50%, -50%);
     z-index: 1;
     padding: 0.1em;
+    /*
     background: #ffffff;
     border-radius: 5px;
     box-shadow: 0 4px 8px 0 orange, 0 6px 20px 0 orange;
+    */
 }
 #map {
     margin-left: auto;
@@ -47,7 +52,6 @@ img {
     text-transform: none;
     font-weight: normal;
     font-size: 1em;
-    text-shadow: 0 -1px rgb(0, 0, 0), 1px 0 #111, 0 1px #111, -1px 0 #111;
     padding: 0px 10px;
     display: block;
     z-index: 1;
@@ -178,7 +182,6 @@ img {
     .navi a {
         text-decoration: none;
         color: rgb(255, 255, 255);
-        text-shadow: 0 -1px rgb(0, 0, 0), 1px 0 #111, 0 1px #111, -1px 0 #111;
         padding: 10px 35px;  
     }
     .navi a:focus,

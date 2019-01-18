@@ -1,7 +1,6 @@
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     position: relative;
-    text-align: center;
 }
 .header {
     position: relative;
@@ -13,7 +12,7 @@ body {
     z-index: -1;
     margin-bottom: -20px;
 }
-img {
+#cover {
     width: 100%;
     height: auto;
 }
@@ -24,6 +23,16 @@ img {
     transform: translate(-50%, -50%);
     z-index: 1;
     padding: 0.1em;
+}
+.picture {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.5em;
+    border: 0.1em solid;
+    border-color: #000000;
 }
 #map {
     margin-left: auto;

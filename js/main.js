@@ -55,7 +55,7 @@ if(document.getElementById("map")){
 	};
 
 	const overlays = {
-		"position": points
+		"Standort": points
 	};
 
 	const map = L.map('map', {layers:[streets1, points]}).setView([52.520008, 13.404954], 11);
